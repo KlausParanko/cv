@@ -1,0 +1,30 @@
+body {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0.2;
+  background-color: #363d4c;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+.sidebar .sidebar-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .sidebar-content h2 {
+  border-bottom: 2px solid white;
+}
+.sidebar .sidebar-content img,
+.sidebar .sidebar-content div {
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+  background-color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

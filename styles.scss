@@ -1,0 +1,37 @@
+$color0: #363d4c;
+$color1: #d3d4d4;
+$color2: #8c3cfc;
+$color3: #848688;
+$color4: #a6938a;
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0.2;
+  background-color: $color0;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+
+  .sidebar-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      border-bottom: 2px solid white;
+    }
+
+    img,
+    div {
+      flex: 1;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  background-color: lighten($color1, 50);
+}
