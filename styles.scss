@@ -13,7 +13,7 @@ $color4: #a6938a;
 }
 
 .sidebar {
-  flex: 0.2;
+  flex: 0.3;
   background-color: $color0;
   display: flex;
   justify-content: flex-end;
@@ -27,10 +27,22 @@ $color4: #a6938a;
     h2 {
       border-bottom: 2px solid white;
     }
+    h3 {
+      height: 1.5%;
+      font-weight: 550;
+    }
 
     img,
     div {
       flex: 1;
+    }
+
+    .expertise > ul > li {
+      margin-top: 5px;
+    }
+
+    .contact {
+      height: 30%;
     }
   }
 }
@@ -38,4 +50,87 @@ $color4: #a6938a;
 .main {
   flex: 1;
   background-color: lighten($color1, 50);
+  padding: 0 2.5%;
+
+  h2 {
+    border-bottom: 2px solid black;
+  }
+  h3 {
+    color: $color3;
+  }
+  p {
+    color: $color0;
+  }
+
+  .education,
+  .projects,
+  .reference {
+    > div {
+      padding-left: 20px;
+    }
+  }
+}
+
+.name-and-bio {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 30px;
+  h1 {
+    flex: 1;
+    font-size: 70px;
+    margin: 2px;
+  }
+  h2 {
+    flex: 0.5;
+    color: $color3;
+    border-bottom: none;
+    font-size: 30px;
+    margin: 2px;
+    letter-spacing: 2px;
+  }
+  span {
+    flex: 1;
+    font-weight: 400;
+    color: $color0;
+  }
+  p {
+    margin-bottom: 2px;
+  }
+}
+
+.education {
+  // display: flex;
+  // flex-direction: column;
+  div {
+    padding-left: 10px;
+  }
+  h3 {
+    margin: 3px 0px;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  h4 {
+    margin: 3px 0px;
+    font-size: 20px;
+    color: $color0;
+  }
+  h5 {
+    margin: 3px 0px;
+    font-size: 15px;
+    color: $color3;
+  }
+}
+
+.projects {
+  h3 {
+    height: 5px;
+  }
+  h4 {
+    color: $color0;
+    width: 70%;
+    margin: 3px 0px;
+  }
+  p {
+    margin: 5px 0px;
+  }
 }

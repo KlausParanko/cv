@@ -1,9 +1,9 @@
-body {
+.whole-page {
   display: flex;
 }
 
 .sidebar {
-  flex: 0.2;
+  flex: 0.3;
   background-color: #363d4c;
   display: flex;
   justify-content: flex-end;
@@ -17,14 +17,97 @@ body {
 .sidebar .sidebar-content h2 {
   border-bottom: 2px solid white;
 }
+.sidebar .sidebar-content h3 {
+  height: 1.5%;
+  font-weight: 550;
+}
 .sidebar .sidebar-content img,
 .sidebar .sidebar-content div {
   flex: 1;
+}
+.sidebar .sidebar-content .expertise > ul > li {
+  margin-top: 5px;
+}
+.sidebar .sidebar-content .contact {
+  height: 30%;
 }
 
 .main {
   flex: 1;
   background-color: white;
+  padding: 0 2.5%;
+}
+.main h2 {
+  border-bottom: 2px solid black;
+}
+.main h3 {
+  color: #848688;
+}
+.main p {
+  color: #363d4c;
+}
+.main .education > div,
+.main .projects > div,
+.main .reference > div {
+  padding-left: 20px;
+}
+
+.name-and-bio {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 30px;
+}
+.name-and-bio h1 {
+  flex: 1;
+  font-size: 70px;
+  margin: 2px;
+}
+.name-and-bio h2 {
+  flex: 0.5;
+  color: #848688;
+  border-bottom: none;
+  font-size: 30px;
+  margin: 2px;
+  letter-spacing: 2px;
+}
+.name-and-bio span {
+  flex: 1;
+  font-weight: 400;
+  color: #363d4c;
+}
+.name-and-bio p {
+  margin-bottom: 2px;
+}
+
+.education div {
+  padding-left: 10px;
+}
+.education h3 {
+  margin: 3px 0px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.education h4 {
+  margin: 3px 0px;
+  font-size: 20px;
+  color: #363d4c;
+}
+.education h5 {
+  margin: 3px 0px;
+  font-size: 15px;
+  color: #848688;
+}
+
+.projects h3 {
+  height: 5px;
+}
+.projects h4 {
+  color: #363d4c;
+  width: 70%;
+  margin: 3px 0px;
+}
+.projects p {
+  margin: 5px 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
