@@ -27,6 +27,12 @@
         <div class="expertise">
           <h2>Expertise</h2>
           <ul>
+            <li>SQL</li>
+            <li>Databricks</li>
+            <ul>
+              <li>Spark</li>
+              <li>Delta Lake</li>
+            </ul>
             <li>Python</li>
             <ul>
               <li>Numpy</li>
@@ -35,23 +41,10 @@
               <li>PyTorch</li>
               <li>HuggingFace</li>
             </ul>
-            <li>SQL/NoSQL</li>
-            <ul>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-            </ul>
-            <li>Spark</li>
-            <li>Kafka</li>
-            <li>Airflow</li>
-            <li>Javascript/Typescript</li>
-            <ul>
-              <li>Node</li>
-              <li>Express</li>
-              <li>React</li>
-            </ul>
+            <li>Snowflake</li>
+            <li>Power BI</li>
             <li>Git/Github</li>
             <li>Linux</li>
-            <li>Docker</li>
           </ul>
         </div>
         <div class="language">
@@ -96,9 +89,9 @@
         <h2>Education</h2>
         <div class="masters">
           <h3 class="degree">MSc Business and Administration, Aalto University</h3>
-          <h4 class="major">Finance</h4>
+          <h4 class="major">Major: Finance</h4>
           <h4 class="minor">
-            Machine Learning, Data Science, and Artificial Intelligence
+            Minor: Machine Learning, Data Science, and Artificial Intelligence
           </h4>
           <h4 class="grades">Grade Average: 4.53/5 (Degree Completed with Honors)</h4>
           <h5 class="years">2019-2023</h5>
@@ -127,25 +120,39 @@
       <div class="projects">
         <h2>Projects</h2>
         <div class="single-project">
-          <h3>Tech Market Analysis</h3>
-          <h4>Purpose: Get to know Finnish tech landscape. Find out who is doing well and who is hiring. May be
-            interesting for other people too.</h4>
-          <h4>Stack: Python (Pandas), MySQL, Typescript (React, D3)</h4>
-          <p>I scrape the Talented Top 50 Places to Work in Tech. I then use the Orbis database to get accounting
-            information for these companies for the past 5 years, e.g. revenue, operating profit, net income, and
-            employee count. I further use the industry classification to find all other Finnish companies within the
-            same
-            industries and get the same financial data for them to expand the companies covered by my analysis. I
-            wrangle the data, analze it and visualize my main findings from it. </p>
+          <h3>Finnish Tech Market Analysis</h3>
+          <h4>Stack: Python, Databricks (Spark, Delta Lake), and Power BI</h4>
+          <p>The purpose for this project is to get know Finnish tech landscape from the perspective of a job seeker. I
+            do this by analysing both tech
+            company financials and job postings for data engineering roles
+            . The questions I answer from the financials dataset is which companies are
+            financially profitable, which ones are least risky regarding their debt amount, and which ones are hiring
+            (have a increasing employee count). From the job postings I analyze which technologies have the most demand
+            from data engineering recruiters. I also combine the datasets to rank the job postings by the financial
+            success of the recruiting company. I get the financials from the Orbis database and the job postings by
+            scraping LinkedIn jobs by creating a
+            Python web scraping script. I parse both datasets into
+            a structured form using python. I then upload these to a database in Databricks. To answer my questions I
+            analyze the datasets
+            using PySpark
+            and create data visualizations using Power BI. </p>
         </div>
         <div class="single-project">
-          <h3>Budget App</h3>
-          <h4>Purpose: Find out where my money is going so I can decrease/increase low/high money-to-value spending.
-            Automate this as much as possible.</h4>
-          <h4>Stack: Python (Pandas), MySQL, Typescript (React, D3)</h4>
-          <p>The application takes my Nordea income statement as input and parses this into a database. It also
-            automatically categorizes my transactions into chosen categories. The ones it can't automatically categorize
-            it provides an efficient ui for manual categorization. The app then vizualises the data. </p>
+          <h3>My Financial and Fitness Data</h3>
+          <h4>Stack: Python, Snowflake, and Power BI</h4>
+          <p> I look at two things in this project: my financials (money coming in/going out) and my fitness (calories
+            coming in/going out, amount of sleep). The purpose is to analyze the data and see if there are things I am
+            spending a lot of money on that provide me little value, or if I am eating things that are not that
+            enjoyable but contribute a lot of calories. I also look at the interplay of my health and financials, like
+            do I spend more money on days I haven't slept well. I also want to automate this as much as possible, so
+            that it is
+            easy to look at on a monthly basis. I get my
+            financials
+            from downloading my transaction log from Nordea and parsing the details with Python. I get my calorie
+            consumption and sleep amount from my Fitbit wristband from Fitbit's website as a csv, which I parse for
+            relevant info using Python. I get my calorie consumption from my calorie diary app FatSecret as a csv. I
+            store the data in a Snowflake database. I analyze the data with SQL queries
+            and visualize the results with Power BI. </p>
         </div>
       </div>
       <div class="jobs">
