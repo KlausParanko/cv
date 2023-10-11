@@ -28,19 +28,16 @@
           <h2>Expertise</h2>
           <ul>
             <li>SQL</li>
-            <li>Databricks</li>
-            <ul>
-              <li>Spark</li>
-              <li>Delta Lake</li>
-            </ul>
             <li>Python</li>
             <ul>
-              <li>Numpy</li>
+              <li>PySpark</li>
               <li>Pandas</li>
+              <li>Numpy</li>
               <li>Matplotlib (Seaborn, Plotly)</li>
               <li>PyTorch</li>
               <li>HuggingFace</li>
             </ul>
+            <li>Databricks</li>
             <li>Snowflake</li>
             <li>Power BI</li>
             <li>Git/Github</li>
@@ -75,10 +72,8 @@
           from
           there on letting the computer do it for me through automation. I am also fascinated by the
           magic of how everything we use on a computer, no matter how complex, eventually boils down to simply zeroes
-          and ones. I use linux as my daily driver,
-          awesomewm as my window manager, and
-          neovim as my editor of choice (although I do have plenty of experience with
-          vscode).
+          and ones. I use linux as my daily driver and enjoy using the command line. I use neovim as my editor of
+          choice, although I am happy working in any environment (eg. the Snowflake/Databricks UIs)
         <p>As a person I am open-minded and tend to get along with everyone. I
           enjoy different cultures, and have lived in Vietnam and Australia. I am always learning about one subject or
           another, whether it is through youtube videos, books, or online courses. I am also an avid
@@ -122,14 +117,17 @@
         <div class="single-project">
           <h3>Finnish Tech Market Analysis</h3>
           <h4>Stack: Python, Databricks (Spark, Delta Lake), and Power BI</h4>
-          <p>The purpose for this project is to get know Finnish tech landscape from the perspective of a job seeker. I
+          <p>The purpose for this project is to get know Finnish tech landscape from my perspective as a job
+            seeker. I
             do this by analysing both tech
-            company financials and job postings for data engineering roles
-            . The questions I answer from the financials dataset is which companies are
+            company financials and job postings for data engineering roles. The questions I answer from the financials
+            dataset is which companies are
             financially profitable, which ones are least risky regarding their debt amount, and which ones are hiring
-            (have a increasing employee count). From the job postings I analyze which technologies have the most demand
+            (have a increasing employee count). From the job postings I analyze which technologies (eg. Databricks,
+            Power BI) have the most demand
             from data engineering recruiters. I also combine the datasets to rank the job postings by the financial
-            success of the recruiting company. I get the financials from the Orbis database and the job postings by
+            success of the recruiting company. <br><br> I get the financials from the Orbis database and the job
+            postings by
             scraping LinkedIn jobs by creating a
             Python web scraping script. I parse both datasets into
             a structured form using python. I then upload these to a database in Databricks. To answer my questions I
@@ -146,13 +144,17 @@
             enjoyable but contribute a lot of calories. I also look at the interplay of my health and financials, like
             do I spend more money on days I haven't slept well. I also want to automate this as much as possible, so
             that it is
-            easy to look at on a monthly basis. I get my
+            easy to look at on a monthly basis.
+
+            <br> <br>I get my
             financials
             from downloading my transaction log from Nordea and parsing the details with Python. I get my calorie
-            consumption and sleep amount from my Fitbit wristband from Fitbit's website as a csv, which I parse for
-            relevant info using Python. I get my calorie consumption from my calorie diary app FatSecret as a csv. I
+            consumption and sleep amount from my Fitbit wristband from Fitbit's website as a csv. I get my calorie
+            consumption from my calorie diary app FatSecret as a csv. I parse both financials and health data with
+            Python. I
             store the data in a Snowflake database. I analyze the data with SQL queries
-            and visualize the results with Power BI. </p>
+            and visualize the results with Power BI.
+          </p>
         </div>
       </div>
       <div class="jobs">

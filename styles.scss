@@ -11,6 +11,11 @@ $color4: #a6938a;
 .whole-page {
   display: flex;
   height: 100%;
+
+  p,
+  li {
+    font-size: 20px;
+  }
 }
 
 .sidebar {
@@ -53,11 +58,11 @@ $color4: #a6938a;
     }
 
     .expertise > ul > li {
-      margin-top: 5px;
+      margin-top: 10px;
     }
 
     .contact {
-      height: 30%;
+      height: 400px;
     }
   }
 }
@@ -69,9 +74,15 @@ $color4: #a6938a;
 
   h2 {
     border-bottom: 2px solid black;
+    font-size: 40px;
   }
   h3 {
     color: $color3;
+    font-size: 30px;
+  }
+  h4 {
+    color: $color0;
+    font-size: 25px;
   }
   p {
     color: $color0;
@@ -89,7 +100,7 @@ $color4: #a6938a;
 .name-and-bio {
   display: flex;
   flex-direction: column;
-  padding: 50px 0px 30px;
+  padding: 50px 0px 0px;
   h1 {
     flex: 1;
     font-size: 70px;
@@ -121,17 +132,17 @@ $color4: #a6938a;
   }
   h3 {
     margin: 3px 0px;
-    font-size: 25px;
+    // font-size: 25px;
     font-weight: 800;
   }
   h4 {
     margin: 3px 0px;
-    font-size: 20px;
+    // font-size: 20px;
     color: $color0;
   }
   h5 {
     margin: 3px 0px;
-    font-size: 15px;
+    font-size: 20px;
     color: $color3;
   }
 }
