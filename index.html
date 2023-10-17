@@ -85,59 +85,53 @@
         <h2>Education</h2>
         <div class="masters">
           <h3 class="degree">MSc Business and Administration, Aalto University</h3>
-          <h4 class="major">Major: Finance (Statistics-focused)</h4>
+          <h4 class="grades">Grade Average: 4.53/5 </h4>
+          <h4 class="major">Major: Finance </h4>
           <h4 class="minor">
             Minor: Machine Learning, Data Science, and Artificial Intelligence
           </h4>
-          <h4 class="grades">Grade Average: 4.53/5 (Degree Completed with Honors)</h4>
           <h5 class="years">2019-2023</h5>
         </div>
         <div class="bachelors">
           <h3 class="degree">BSc Business and Administration, Aalto University</h3>
-          <h4 class="major">Finance</h4>
-          <h4 class="minor">Exchange in Vietnam</h4>
           <h4 class="grades">Grade Average: 4.33/5</h4>
+          <h4 class="major">Major: Finance</h4>
+          <h4 class="minor">Minor: Exchange in Vietnam</h4>
           <h5 class="years">2016-2019</h5>
         </div>
       </div>
       <div class="projects">
         <h2>Projects</h2>
         <div class="single-project">
-          <h3>Sentiment Analysis on Company 8K Reports Using a Large Language Model</h3>
+          <h3>Sentiment Analysis on Company 8K Reports Using a Large Language Model </h3>
           <h4>Stack</h4>
           <ul>
-            <li>Python</li>
-            <ul>
-              <li>Data Wrangling: Pandas</li>
-              <li>Large Language Models: HuggingFace</li>
-              <li>Regression Models: Statsmodels</li>
-            </ul>
+            <li>Data Wrangling: Python/Pandas</li>
+            <li>Large Language Models: Python/HuggingFace</li>
+            <li>Regression Models: Python/Statsmodels</li>
             <li>Downloading Reports: Linux SSH to Remote Computer</li>
           </ul>
-          <p>For my thesis I gathered a novel dataset of company 8K reports using Python and applied state-of-the-art
-            deep
-            learning
-            algorithms to find relationships between the content of the reports and the reporting companies' stock
+          </ul>
+          <h4>Summary</h4>
+          <p>For my master's thesis I gathered a novel dataset of company 8K reports using Python and applied
+            sentiment analysis to the text of the reports using a large language model similar to ChatGPT. I combined
+            this with the companies' stock data and found
+            relationships between the release of the reports, their text content's sentiment, and the reporting
+            companies' stock
             price
-            movements. Gathering the dataset included automating making requests for the 8K reports, cleaning the
-            data,
-            and parsing the reports (which were originally intended for human consumption) into a structured form that
-            could be
-            statistically analyzed. Afterwards, I gave the
+            movements. Afterwards, I gave the
             dataset to a phd student of my advisor, who asked if he could use it for his own research.
             The grade I got for the work was 5/5.</p>
         </div>
         <div class="single-project">
-          <h3>Thesis</h3>
+          <h3>Analyzing Correlation Between Google Search Data and Company Stock Prices </h3>
           <h4>Stack</h4>
           <ul>
-            <li>Python</li>
-            <ul>
-              <li>Downloading Search Data: Google Trends API</li>
-              <li>Data Wrangling: Pandas</li>
-              <li>Regression Models: Statsmodels</li>
-            </ul>
+            <li>Downloading Search Data: Python/Google Trends API </li>
+            <li>Data Wrangling: Python/Pandas</li>
+            <li>Regression Models: Python/Statsmodels</li>
           </ul>
+          <h4>Summary</h4>
           <p>For my bachelor's thesis I studied whether attention companies receive as measured by the amount of
             Google
             searches correlates with their price movements. I used Python to gather the data from the Google Trends
@@ -145,56 +139,34 @@
             and matched this to price data of companies from CRSP. The grade I received was 4/5.</p>
         </div>
         <div class="single-project">
-          <h3>Finnish Tech Market Analysis</h3>
+          <h3>Web Scraping and Analyzing Data-related LinkedIn Job Postings</h3>
           <h4>Stack</h4>
           <ul>
-            <li>Data Wrangling & Analysis: PySpark>
-            <li>Data Warehousing: Databricks>
+            <li>Web Scraping: Python/Selenium</li>
+            <li>Data Wrangling & Analysis: PySpark</li>
+            <li>Data Warehousing: Databricks</li>
             <li>Reporting & Data Vizualisations: Power BI</li>
           </ul>
-          <p>The purpose for this project is to get know Finnish tech landscape from my perspective as a job
-            seeker. I
-            do this by analysing both tech
-            company financials and job postings for data engineering roles. The questions I answer from the financials
-            dataset is which companies are
-            financially profitable, which ones are least risky regarding their debt amount, and which ones are hiring
-            (have a increasing employee count). From the job postings I analyze which technologies (eg. Databricks,
-            Power BI) have the most demand
-            from data engineering recruiters. I also combine the datasets to rank the job postings by the financial
-            success of the recruiting company. <br><br> I get the financials from the Orbis database and the job
-            postings by
-            scraping LinkedIn jobs by creating a
-            Python web scraping script. I parse both datasets into
-            a structured form using python. I then upload these to a database in Databricks. To answer my questions I
-            analyze the datasets
-            using PySpark
-            and create data visualizations using Power BI. </p>
+          <h4>Summary</h4>
+          <p>I program a Python script to download Finnish data-related job postings and their details from LinkedIn. I
+            analyze which
+            data-related jobs titles, technologies, and skills are in most demand by their frequency. I warehouse my
+            data using Databricks
+            hosted on Azure and visualize it using Power BI.</p>
         </div>
         <div class="single-project">
-          <h3>My Financial and Fitness Data</h3>
+          <h3>Analyzing Finnish Tech Market</h3>
           <h4>Stack</h4>
           <ul>
-            <li>Data Wrangling & Analysis: SQL>
-            <li>Data Warehousing: Snowflake>
+            <li>Data Wrangling & Analysis: SQL</li>
+            <li>Data Warehousing: Snowflake</li>
             <li>Reporting & Data Vizualisations: Tableau</li>
           </ul>
-          <p> I look at two things in this project: my financials (money coming in/going out) and my fitness (calories
-            coming in/going out, amount of sleep). The purpose is to analyze the data and see if there are things I am
-            spending a lot of money on that provide me little value, or if I am eating things that are not that
-            enjoyable but contribute a lot of calories. I also look at the interplay of my health and financials, like
-            do I spend more money on days I haven't slept well. I also want to automate this as much as possible, so
-            that it is
-            easy to look at on a monthly basis.
-
-            <br> <br>I get my
-            financials
-            from downloading my transaction log from Nordea and parsing the details with Python. I get my calorie
-            consumption and sleep amount from my Fitbit wristband from Fitbit's website as a csv. I get my calorie
-            consumption from my calorie diary app FatSecret as a csv. I parse both financials and health data with
-            Python. I
-            store the data in a Snowflake database. I analyze the data with SQL queries
-            and visualize the results with Power BI.
-          </p>
+          <h4>Summary</h4>
+          <p>I download financial information of Finnish tech companies from Orbis database. I analyze the data using
+            SQL to find out which companies are the most financially successful, stable, and which have hired the most
+            employees in recent years. I warehouse the data in Snowflake hosted on AWS and visualize my results using
+            Tableau.</p>
         </div>
       </div>
       <div class="jobs">
