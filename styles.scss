@@ -14,7 +14,13 @@ $color4: #a6938a;
 
   p,
   li {
-    font-size: 20px;
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
   }
 }
 
@@ -74,7 +80,8 @@ $color4: #a6938a;
 
   h2 {
     border-bottom: 2px solid black;
-    font-size: 40px;
+    font-size: 50px;
+    color: $color0;
   }
   h3 {
     color: $color3;
@@ -84,7 +91,8 @@ $color4: #a6938a;
     color: $color0;
     font-size: 25px;
   }
-  p {
+  p,
+  li {
     color: $color0;
   }
 
@@ -103,14 +111,14 @@ $color4: #a6938a;
   padding: 50px 0px 0px;
   h1 {
     flex: 1;
-    font-size: 70px;
+    font-size: 100px;
     margin: 2px;
   }
   h2 {
     flex: 0.5;
     color: $color3;
     border-bottom: none;
-    font-size: 30px;
+    font-size: 50px;
     margin: 2px;
     letter-spacing: 2px;
   }
@@ -129,32 +137,42 @@ $color4: #a6938a;
   // flex-direction: column;
   div {
     padding-left: 10px;
+    margin-bottom: 20px;
   }
   h3 {
     margin: 3px 0px;
-    // font-size: 25px;
+    font-size: 40px;
     font-weight: 800;
   }
   h4 {
-    margin: 3px 0px;
-    // font-size: 20px;
+    margin: 8px 0px;
+    font-size: 30px;
     color: $color0;
   }
   h5 {
     margin: 3px 0px;
-    font-size: 20px;
+    font-size: 30px;
     color: $color3;
   }
 }
 
 .projects {
   h3 {
-    height: 5px;
+    // height: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
   }
   h4 {
     color: $color0;
     width: 70%;
-    margin: 3px 0px;
+    margin: 6px 0px 10px;
+    font-size: 30px;
+  }
+  ul {
+    margin-top: 3px;
+  }
+  li {
+    margin-top: 5px;
   }
   p {
     margin: 5px 0px;
